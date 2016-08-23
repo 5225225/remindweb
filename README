@@ -1,0 +1,8 @@
+static/remind.html is generated using "man -Hcat remind > remind.html"
+
+
+This code is not secure against arbitrary input unless you have RUN OFF
+in your remind file and INCLUDE the web.rem file.
+
+By default, the code uses ~/.config/remind/web.rem as the reminder file
+to insert into, and ~/src/remindweb/static as the static file root.

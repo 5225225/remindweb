@@ -1,0 +1,80 @@
+<html>
+
+<head>
+<link href="/static/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<p>
+Add a raw line
+</p>
+<form action="/add-raw" method=post>
+<input type=text name=rem_command>
+
+<br>
+
+
+<button type=submit>ADD</button>
+
+</form>
+
+
+<a href="/static/remind.html"><code>remind</code> man page</a>
+
+<hr>
+
+
+<form action="/add-easy" method=post>
+
+<pre>
+REM {date_spec} +{delta} *{repeat} AT {time} +{tdelta} FROM {date1} UNTIL {date2} DURATION {time} MSG {MSG}
+</pre>
+
+<div>
+<label>date_spec: </label> <input type=text name=date_spec>
+</div>
+
+<div>
+<label>delta: </label> <input type=number name=delta>
+</div>
+
+<div>
+<label>repeat: </label> <input type=number step=1 name=repeat>
+</div>
+
+<div>
+<label>AT: </label> <input type=time name=at>
+</div>
+
+<div>
+<label>tdelta: </label> <input type=number step=1 name=tdelta>
+</div>
+
+<div>
+<label>from: </label> <input type=date name=start_date>
+</div>
+
+<div>
+<label>until: </label> <input type=date name=expiry_date>
+</div>
+
+<div>
+<label>duration: </label> <input type=time name=duration>
+</div>
+
+<div>
+<label>MSG: </label> <input type=text name=msg>
+</div>
+
+<br>
+
+<button type=submit>ADD</button>
+
+</form>
+
+<pre><code>
+{{calendar}}
+</code></pre>
+
+</body>
+</html>
